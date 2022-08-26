@@ -1,0 +1,35 @@
+.client-list {
+    display: flex;
+    justify-items: center;
+    gap: 30px;
+}
+
+.client-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--inactive-icon);
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    transition: border var(--aimation-active);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--active-link);
+    }
+}
+
+
+
+.client-icon {
+    justify-self: center;
+    fill: var(--inactive-icon);
+    transition: fill var(--aimation-active);
+
+    .client-link:hover &,
+    .client-link:focus & {
+            fill: var(--active-link)
+        }
+}
+

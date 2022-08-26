@@ -1,0 +1,20 @@
+.button-studio {
+    padding: 10px 32px;
+    background-color: var(--active-link);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--accent-white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    transition: background-color var(--aimation-active);
+
+        &:hover,
+        &:focus {
+            background-color: #188CE8;
+        }
+}

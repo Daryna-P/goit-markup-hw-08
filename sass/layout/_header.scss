@@ -1,0 +1,91 @@
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border: 1px solid #ECECEC;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-navigation {
+    display: flex;
+    gap: 93px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.menu-link {
+    position: relative;
+    color: inherit;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-bottom: 32px;
+    transition: color var(--aimation-active);
+
+    &:hover,
+    &:focus {
+        color: var(--active-link)
+    }
+}
+
+
+
+.active-page {
+    color: var(--active-link);
+
+    &::after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        bottom: -1px;
+        border-radius: 2px;
+        background-image: url(../images/icons/hover.svg);
+        background-color: var(--active-link);
+    }
+}
+
+
+
+.link-list {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.contact-link {
+    display: flex;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--inactive-text);
+    align-items: center;
+    
+    &:hover,
+    &:focus {
+        color: var(--active-link)
+    }
+}
+
+
+
+.contact-icon {
+    display: inline-block;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
