@@ -1,7 +1,9 @@
 .client-list {
     display: flex;
-    justify-items: center;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .client-link {
@@ -19,8 +21,6 @@
         border: 1px solid var(--active-link);
     }
 }
-
-
 
 .client-icon {
     justify-self: center;

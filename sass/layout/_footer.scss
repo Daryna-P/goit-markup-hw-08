@@ -1,18 +1,45 @@
 .footer {
+    // display: block;
     background-color: #2F303A;
     padding: 60px 0;
 }
 
-.footer-container {
+.footer-container {    
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    
+    @media screen and (max-width: 1199px) {
+        gap: 60px;
+        align-items: center;
+    }
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        align-items: baseline; 
+    }
+    
 }
-
+.footer-first-and-second-column-wrapper {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
 .footer-first-column {
-    margin-right: 70px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 165px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;   
+    }
+    
 }
 
-.contact-item:not(:last-child) {
+.contact-item--footer:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -39,7 +66,13 @@
 
 
 .footer-second-column {
-    margin-right: 93px;
+    @media screen and (max-width: 1199px) {
+        text-align: center;  
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
+    
 }
 
 .title-footer {
@@ -64,11 +97,25 @@
     fill: var(--accent-white);
 }
 
+
+.footer-third-column {
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
 .footer-form {
     display: flex;
-    margin-right: 12px;
-    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        margin-right: 12px;
+        gap: 12px;
 }
+    }
+    
 
 .footer-folder {
     width: 358px;
@@ -79,6 +126,9 @@
     background-color: inherit;
     color: var(--accent-white);
     transition: border-color var(--aimation-active);
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
 
     &:focus {
         border-color: var(--active-link);
