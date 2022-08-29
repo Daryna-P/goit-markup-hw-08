@@ -22,12 +22,16 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
+    width: 320px;
+    // width: 450px;
     height: 609px;
     padding: 40px;
     background-color: var(--accent-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    @media screen and (min-width:480px) {
+        width: 450px;
+    }
     @media screen and (min-width:1200px) {
         width: 528px;
         height: 581px;
@@ -175,9 +179,11 @@
     line-height: 1.17;    
     color: var(--inactive-text);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    
     @media screen and (min-width:1200px) {
         font-size: 14px;
         line-height: 1.71;
