@@ -12,6 +12,9 @@
     padding: 48px 10px 48px 40px; 
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     transition: opacity var(--aimation-active), visibility var(--aimation-active), fill var(--aimation-active);
+    @media screen and (min-width:768px) {
+        display: none;
+    }
 }
 .mobile-menu.is-open {
     opacity: 1;
@@ -39,7 +42,7 @@
     border: none;
 }
 .mobile-nav {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     @media screen and (min-width:480px) {
         margin-bottom: 302px;
     }

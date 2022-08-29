@@ -9,6 +9,9 @@
         width: calc((100% - 30px) / 2);
         border: 1px solid #EEEEEE;
     }
+    @media screen and (min-width:1200px) {
+        width: calc((100% - 60px) / 3);
+    }
 }
 .portfolio-card_link {
     display: block;

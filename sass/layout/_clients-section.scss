@@ -16,6 +16,9 @@
     height: 92px;
     transition: border var(--aimation-active);
 
+@media screen and (max-width:480px) {
+    width: 130px;
+}    
     &:hover,
     &:focus {
         border: 1px solid var(--active-link);
