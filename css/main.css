@@ -218,12 +218,18 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   background-color: var(--accent-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal_close-btn {
@@ -257,9 +263,14 @@ body {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: var(--text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal_text {
+    line-height: 1.15;
+  }
 }
 
 .user-info {
@@ -346,12 +357,19 @@ body {
 }
 
 .user-info_private-policy-cond {
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--inactive-text);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .user-info_private-policy-cond {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .user-info_private-policy-link {
@@ -1041,8 +1059,14 @@ body {
 .portfolio-btns {
   display: flex;
   gap: 8px;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-btns {
+    justify-content: center;
+  }
 }
 
 .portfolio-btn {

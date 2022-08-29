@@ -3,7 +3,11 @@
     gap: 30px;
     flex-wrap: wrap;
 }
-
+.portfolio-card {
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        width: ((100%-30px)/2);
+    }
+}
 .portfolio-card_link {
     display: block;
     transition: box-shadow var(--aimation-active);
@@ -51,7 +55,7 @@
 
 }
 
-.portfolio-card_bottom-wrapper h2 {
+.portfolio-card_title {
     color: var(--text-color);
     margin-bottom: 4px;
 }
